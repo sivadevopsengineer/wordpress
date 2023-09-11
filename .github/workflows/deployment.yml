@@ -11,6 +11,7 @@ jobs:
       with:
         node-version: 12.x
     - name: Install dependencies
+      working-directory: /var/www/siva_domain/wordpress
       run: |
         composer install -o
         npm install
