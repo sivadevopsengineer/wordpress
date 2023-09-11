@@ -1,0 +1,2 @@
+# wordpress
+deployment for wordpress 
