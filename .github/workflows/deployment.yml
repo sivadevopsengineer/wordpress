@@ -17,10 +17,6 @@ jobs:
 
       - name: Install dependencies
         working-directory: /var/www/siva_domain/wordpress/wp-content/
-        run: |
-          composer install -o
-          npm install
-
       - name: Build
         run: npm run build
 
