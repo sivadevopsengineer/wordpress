@@ -23,3 +23,4 @@ jobs:
           --exclude /.github/ \
           --exclude /node_modules/ \
           ./ ${{env.dest}}
+          npm install
