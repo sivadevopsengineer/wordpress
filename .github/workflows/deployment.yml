@@ -10,14 +10,6 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: 16.x
-    - name: Install dependencies
-      working-directory: /home/ubuntu/var/www/siva_domain/wordpress/
-      run: |
-        composer install -o
-        npm install
-    - name: Build
-      run: npm run build
-    
     - name: Sync
       env:
         dest: 'root@172.31.38.4:/var/www/siva_domain/wordpress/wp-content/themes/'
