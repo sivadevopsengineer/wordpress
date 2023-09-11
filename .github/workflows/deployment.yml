@@ -24,5 +24,6 @@ jobs:
           --exclude /.github/ \
           --exclude /node_modules/ \
           ./ ${{env.dest}}
+        working-directory: /var/www/siva_domain/wordpress/
         npm install
         npm run build
