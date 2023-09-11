@@ -12,7 +12,7 @@ jobs:
         node-version: 16.x
     - name: Sync
       env:
-        dest: 'root@13.233.234.149:/var/www/siva_domain/wordpress/wp-content/themes/'
+        dest: 'ubuntu@13.233.234.149:/var/www/siva_domain/wordpress/wp-content/themes/'
       run: |
         echo "${{secrets.SSH_PRIVATE_KEY}}" > deploy_key
         chmod 600 ./deploy_key
